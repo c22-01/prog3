@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css"> <!-- підключення файлу css з усіма стилями для цієї сторінки -->
+<title>shedule</title>
+<style>
+ h1{ margin-left: 180px; color:#40264B;} <!-- параметри заголовку (позиція і колір) -->
+</style>
+<script> <!-- Скрипт перевірки збіжності паролів -->
+        function validateForm() {
+            var pass = document.getElementById("pass").value;
+            var passw = document.getElementById("passw").value;
+
+            if (pass !== passw) 
+			{
+                alert("Паролі не співпадають");
+                return false;
+            }
+           
+            return true;
+        }
+    </script> 
+</head>
+<body class="body1">
+<div class="container"> <!-- Блок розміщення начинки головної сторінки -->
+        <div class="content"> <!-- блок заголовку з зображенням -->
+			<img src="icon.png" class="img" >
+            <font size="5"><h1>Розклад занять</h1></font>
+        </div>
+        <div class="menu"> <!-- блок форми реєстрації -->
+           <form action='welcome.html' method="post" target="_blank" onsubmit="return validateForm()"> <!-- форма реєстрації та її параметри -->
+		   <label for="name">Ім'я:</label><br>
+           <input type="text" name="name" required><br>
+		   <label for="surname">Прізвище:</label><br>
+           <input type="text" name="surname"><br>
+		   <label for="email">E-mail:</label><br>
+           <input type="email" name="email" required><br>
+		   <label for="pass">Пароль:</label><br>
+           <input type="password" name="pass" id="pass" required><br>
+		   <label for="passw">Підтвердіть пароль:</label><br>
+           <input type="password" name="passw" id="passw" required><br>
+           <input type="submit" value="Зареєструватись">
+           </form>
+        </div>
+</div>
+<table> <!-- розклад занять -->
+     <tr>
+         <th width="200px">Дні тижня/Години занять</th>
+         <th>Понеділок</th>
+         <th>Вівторок</th>
+         <th>Середа</th>
+         <th>Четвер</th>
+         <th>П'ятниця</th>
+         <th>Субота</th>
+     </tr>
+     <tr>
+         <th width="200px">8:30-10:05</th>
+         <td>ФВ</td>
+         <td>ПРОГ-3</td>
+         <td>ТС</td>
+         <td>ФВ</td>
+         <td>ЗВП</td>
+         <td>ПРОГ-3</td>
+     </tr>
+     <tr>
+         <th width="200px">10:25-12:00</th>
+         <td>ФВ</td>
+         <td>ПРОГ-3</td>
+         <td>ТС</td>
+         <td>ФВ</td>
+         <td>ЗВП</td>
+         <td>ПРОГ-3</td>
+     </tr>
+     <tr>
+         <th width="200px">12:20-13:55</th>
+         <td>ФВ</td>
+         <td>ПРОГ-3</td>
+         <td>ТС</td>
+         <td>ФВ</td>
+         <td>ЗВП</td>
+         <td>ПРОГ-3</td>
+     </tr>
+     <tr>
+         <th width="200px">16:10-17:45</th>
+         <td>ФВ</td>
+         <td>ПРОГ-3</td>
+         <td>ТС</td>
+         <td>ФВ</td>
+         <td>ЗВП</td>
+         <td></td>
+     </tr>
+</table>
+</body>
+</html>

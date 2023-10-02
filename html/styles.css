@@ -1,0 +1,79 @@
+
+ /* Для сторінки html.html */
+ 
+.body1 /* Параметри для тіла головної сторінки */
+ {
+ font-family: Times New Roman;
+ background-image: url("back.jpg");
+ }
+ 
+.img /* Параметри для іконки зліва блоку заголовка */
+{ 
+	width:150px;
+	margin: 0px 0px 0px 20px;
+	float:left;
+}	
+	
+table /* Параметри для таблиці */
+{
+  border: 0; 
+  margin: 15px 0px 0px 30px;
+  text-align:center;
+  border-collapse: collapse;
+  width:1000px;
+  height:300px;
+  color:#40264B; 
+  font-size:20px;
+  }
+
+td,th /* Параметри для рядків та комірок таблиці */
+{ 
+  border: 1px solid grey; 
+  text-align:center;
+  background-color: #ddf5ff;
+  border-color:#d1c8fd;
+}
+
+.container /* Параметр для блокової структури сторінки */
+{
+    display: flex;
+}
+
+.content /* Параметри для блоку заголовку */
+{
+    flex: 1;
+    padding: 20px;
+}
+
+.menu /* Параметри для блоку форми реєстрації */
+{
+    position: absolute;
+    right: 0;
+    background-color: #AB98D1;
+    color: #27142E;
+    width: 200px;
+    padding: 30px;
+    height: 700px;
+
+}
+
+
+
+/* Для сторінки Welcome.html */
+
+.body{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Зроблюємо сторінку висоти 100% від видимого вікна браузера */
+    margin: 0;
+	background-image: url("back2.jpg");
+	
+}
+.div{
+	text-align: center;
+    padding: 20px;
+	background: rgb(244,223,230);
+	background: radial-gradient(circle, rgba(244,223,230,1) 0%, rgba(244,209,221,1) 56%, rgba(227,179,196,1) 100%);
+	width: 200vh;
+}

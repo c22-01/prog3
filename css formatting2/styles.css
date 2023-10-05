@@ -1,0 +1,162 @@
+.header{
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+	margin:0;
+	padding: 5px;
+	background-image:url("fon1.jpg");
+	background-size:cover;
+	text-align: center;
+	
+}
+
+.header h1{
+	color: #D6E3E4;
+	font-family: "Lucida Handwriting", cursive;
+	font-size: 60px;
+	text-shadow: 2px 2px 5px #DEFEFF;
+}
+
+.header a{
+	color: #B8E2E5;
+	font-style: italic;
+}
+
+.header a:hover{
+	color: white;
+	text-shadow: 1px 1px 3px #DEFEFF;
+}
+
+.header ul{
+	list-style-position: inside;
+    margin: 0;
+    padding: 0;
+	color: #B8E2E5;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.content{
+	background-color: #a9cfc6;
+	padding: 30px;
+	margin: 5px;
+	border: dotted #486961 7px;
+	text-align: center;
+}
+
+.content a{
+	display: block;
+	background-image: url("fon2.jpeg");
+	width:500px;
+    height:100px;
+	color: white;
+    margin-left: auto;
+    margin-right: auto;	
+	transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.content a:hover{
+	text-shadow: 1px 1px 3px #DEFEFF;
+	box-shadow: 0 4px 8px 0 rgba(73, 255, 170, 0.3), 0 6px 20px 0 rgba(110, 203, 147, 0.39);
+}
+
+.content ul {
+    list-style-type: none;
+	margin-right:40px;
+ }
+
+.content li {
+    margin: 10px;
+	font-family: "Lucida Handwriting", cursive;
+	font-weight: 100;
+	margin: 25px;
+}
+
+.content h2 {
+    font-family: "Lucida Handwriting", cursive;
+	font-weight: 700;
+	color:#506455;
+}
+
+.form {
+	background-image:url("contact us.png");
+	padding: 20px;
+    text-align: right;
+    background-size:cover;
+	margin:0;
+	margin-top:10px;
+}
+
+.form form{
+	margin-right: 200px;
+    font-family: "Lucida Handwriting", cursive;
+	font-weight: 500;
+	font-size: 20px;	
+}
+
+.form input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.form button{
+	margin-right: 50px;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;  
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: #1B3C1C;
+    border: 2px solid #4CAF50;
+	font-family: "Lucida Handwriting", cursive;
+	font-weight: 700;
+}
+
+.form button:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.table {
+	background: #a2d4b9;
+	margin-top:10px;
+	padding: 10px;
+	border: dotted #378688 7px;
+	padding-bottom: 40px;
+}
+
+.table table{
+	background-color: #AFCDBB;
+	border: 10px double #0c3b1f ;
+	margin-right:25%;
+	margin-left:25%;
+	width: 750px;
+	text-align:center;
+	border-collapse: collapse;
+}
+
+.table th, td{
+	border: 2px solid #0c3b1f;
+	color: #14221B;
+	font-family: "Lucida Handwriting", cursive;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.table th{
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.table h2{
+	font-family: "Lucida Handwriting", cursive;
+	font-weight: 500;
+	font-size: 50px;
+	text-align:center;
+	color: #14221B;
+	text-shadow: 1px 1px 5px #0c3b1f;
+}

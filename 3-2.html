@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css.css">
+<script>
+    // Wait for the document to be fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      // Select elements by ID
+      var elementById = document.getElementById("elementById");
+      elementById.style.color = "blue"; // Change the text color
+
+      // Select elements by class
+      var elementsByClass = document.getElementsByClassName("elementByClass");
+      for (var i = 0; i < elementsByClass.length; i++) {
+        elementsByClass[i].style.fontWeight = "bold"; // Change the font weight
+      }
+
+      // Select elements by tag
+      var elementsByTag = document.getElementsByTagName("p");
+      for (var i = 0; i < elementsByTag.length; i++) {
+        elementsByTag[i].style.backgroundColor = "yellow"; // Change the background color
+      }
+
+      // Select the first <h2> element within the <div> within the <a> element
+      var h2Element = document.querySelector("a div h2");
+      h2Element.textContent = "Modified Text"; // Change the text
+
+      // Select all <li> elements within the <ul> and change their text
+      var liElements = document.querySelectorAll("ul li");
+      for (var i = 0; i < liElements.length; i++) {
+        liElements[i].textContent = "New Text for List Item " + (i + 1);
+      }
+    });
+  </script>
+</head>
+<body>
+    <div>
+        <p id="elementById"> Hello</p>
+        <p class="elementByClass"> I`m web-page</p>
+    </div>
+    <ul>
+        <li>1 - 1</li>
+        <li>2 - 2</li>
+        <li>3 - 3</li>
+    </ul>
+    <a href="#"><div><h2>I`m block</h2></div></a>
+</body>
+</html>
